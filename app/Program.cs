@@ -8,6 +8,13 @@ namespace app
         {
             for(int i = 1; i <= 100; i++)
             {
+                string n = i.ToString();
+                if(n.Contains("7"))
+                {
+                    Console.WriteLine("github");
+                    continue;
+                }
+                
                 int m3 = i % 3;
                 int m5 = i % 5;
                 if(m3 == 0 && m5 == 0)
